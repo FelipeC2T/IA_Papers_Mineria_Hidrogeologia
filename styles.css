@@ -48,6 +48,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -184,6 +185,7 @@ body {
         opacity: 0;
         transform: translateX(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -300,6 +302,18 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     color: white;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.model-badge:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+a.model-badge {
+    color: white;
+    text-decoration: none;
 }
 
 .model-badge.lstm {
@@ -424,6 +438,17 @@ body {
 .case-card p {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
+}
+
+.case-card a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.case-card a:hover {
+    color: var(--primary-purple);
+    text-decoration: underline;
 }
 
 /* TRL Badge */
@@ -859,6 +884,17 @@ body {
     color: var(--dark-blue);
 }
 
+.reference-content h4 a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.reference-content h4 a:hover {
+    color: var(--primary-blue);
+    text-decoration: underline;
+}
+
 .reference-content .authors {
     font-size: 0.9rem;
     color: var(--text-gray);
@@ -877,6 +913,19 @@ body {
     font-size: 0.8rem;
     color: var(--primary-blue);
     margin-bottom: 0.5rem;
+}
+
+.reference-content .doi a,
+.reference-content .link a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.reference-content .doi a:hover,
+.reference-content .link a:hover {
+    color: var(--primary-purple);
+    text-decoration: underline;
 }
 
 .reference-content .impact {
